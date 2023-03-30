@@ -12,6 +12,6 @@ Add your eslint configuration's extends field.
 
 ```json
 {
-    "extends": ["@pcrab/eslint-config"],
+    "extends": ["@pcrab/eslint-config"]
 }
 ```

@@ -1,12 +1,12 @@
 {
     "name": "@pcrab/eslint-config",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "description": "My personal eslint config",
     "main": "dist/index.cjs",
     "scripts": {
         "preinstall": "npx only-allow pnpm",
         "build": "node build.cjs",
-        "fix": "eslint --fix src/*",
+        "fix": "eslint --fix ./src/*",
         "prepublishOnly": "pnpm build",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
@@ -30,15 +30,21 @@
     ],
     "peerDependencies": {
         "eslint": ">=7.2.0",
+        "prettier": ">=2.0.0",
         "typescript": ">=3.3.1"
     },
     "dependencies": {
         "@typescript-eslint/eslint-plugin": "^5.57.0",
         "@typescript-eslint/parser": "^5.57.0",
-        "eslint-plugin-import": "^2.27.5"
+        "eslint-config-prettier": "^8.8.0",
+        "eslint-plugin-import": "^2.27.5",
+        "eslint-plugin-prettier": "^4.2.1",
+        "eslint-plugin-react": "^7.32.2"
     },
     "devDependencies": {
+        "@pcrab/prettier-config": "^0.1.0",
         "esbuild": "^0.17.14",
-        "eslint": "^8.37.0"
+        "eslint": "^8.37.0",
+        "prettier": "^2.8.7"
     }
 }
