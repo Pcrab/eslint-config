@@ -127,9 +127,5 @@ module.exports = {
                 "@typescript-eslint/lines-between-class-members": "error",
             },
         },
-        {
-            extends: ["plugin:react/recommended", "plugin:react/jsx-runtime"],
-            files: ["*.tsx", "*.jsx"],
-        },
     ],
 };
