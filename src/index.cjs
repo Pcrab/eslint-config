@@ -5,11 +5,7 @@ module.exports = {
         node: true,
     },
     reportUnusedDisableDirectives: true,
-    extends: [
-        "eslint:recommended",
-        "plugin:import/recommended",
-        "plugin:prettier/recommended",
-    ],
+    extends: ["eslint:recommended", "plugin:prettier/recommended"],
     ignorePatterns: [
         "*.min.*",
         "*.d.ts",
@@ -48,18 +44,11 @@ module.exports = {
                 "plugin:@typescript-eslint/recommended",
                 "plugin:@typescript-eslint/recommended-requiring-type-checking",
                 "plugin:@typescript-eslint/strict",
-                "plugin:import/typescript",
                 "plugin:prettier/recommended",
             ],
             plugins: ["@typescript-eslint"],
             files: ["*.ts", "*.cts", "*.mts", "*.tsx"],
             parser: "@typescript-eslint/parser",
-            settings: {
-                "import/resolver": {
-                    typescript: true,
-                    node: true,
-                },
-            },
             parserOptions: {
                 tsconfigRootDir: process.cwd(),
                 project: ["tsconfig.json"],
