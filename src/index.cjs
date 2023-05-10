@@ -73,6 +73,12 @@ module.exports = {
                         format: ["camelCase", "PascalCase"],
                     },
                 ],
+                "@typescript-eslint/unified-signatures": [
+                    "error",
+                    {
+                        ignoreDifferentlyNamedParameters: true
+                    }
+                ],
                 "@typescript-eslint/no-confusing-void-expression": "error",
                 "@typescript-eslint/no-duplicate-type-constituents": "error",
                 "@typescript-eslint/no-redundant-type-constituents": "error",
