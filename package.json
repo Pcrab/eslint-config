@@ -1,6 +1,6 @@
 {
     "name": "@pcrab/eslint-config",
-    "version": "0.6.0",
+    "version": "0.7.0",
     "description": "My personal eslint config",
     "main": "dist/index.cjs",
     "scripts": {
