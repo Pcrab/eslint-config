@@ -23,6 +23,7 @@ module.exports = {
     rules: {
         // Suggestions
         "default-param-last": "error",
+        "no-constant-condition": ["error", { checkLoops: false }],
         "no-invalid-this": ["error", { capIsConstructor: false }],
         "no-loop-func": "warn",
         "no-unused-expressions": [
@@ -94,6 +95,10 @@ module.exports = {
                         allowTupleTypes: "always",
                         allowGenerics: "always",
                     },
+                ],
+                "@typescript-eslint/no-unnecessary-condition": [
+                    "error",
+                    { allowConstantLoopConditions: true },
                 ],
                 "@typescript-eslint/no-unnecessary-qualifier": "error",
                 "@typescript-eslint/no-useless-empty-export": "error",
