@@ -36,13 +36,13 @@
     "dependencies": {
         "@typescript-eslint/eslint-plugin": "^5.61.0",
         "@typescript-eslint/parser": "^5.61.0",
-        "eslint-config-prettier": "^8.8.0",
-        "eslint-plugin-prettier": "^4.2.1"
+        "eslint-config-prettier": "^8.8.0"
     },
     "devDependencies": {
         "@pcrab/prettier-config": "^0.2.0",
         "esbuild": "^0.18.11",
         "eslint": "^8.44.0",
+        "eslint-plugin-prettier": "5.0.0-alpha.2",
         "prettier": "^3.0.0"
     }
 }
